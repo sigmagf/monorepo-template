@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [ "ES6", "ESNext" ],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/**/*.d.ts"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["./*"],
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
